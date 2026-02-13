@@ -2,11 +2,9 @@
 Module for testing the sim_options parameter.
 """
 
-
 from itertools import combinations
 
 import pytest
-
 from surprise import KNNBaseline, KNNBasic, KNNWithMeans
 from surprise.model_selection import cross_validate
 

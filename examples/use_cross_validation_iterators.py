@@ -2,7 +2,6 @@
 This module descibes how to use cross-validation iterators.
 """
 
-
 from surprise import accuracy, Dataset, SVD
 from surprise.model_selection import KFold
 

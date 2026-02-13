@@ -2,18 +2,14 @@
 Module for testing the Dataset class.
 """
 
-
 import os
 import random
 
 import pandas as pd
-
 import pytest
-
 from surprise import BaselineOnly, Dataset, Reader
 from surprise.builtin_datasets import get_dataset_dir
 from surprise.model_selection import KFold, PredefinedKFold
-
 
 random.seed(1)
 
@@ -160,11 +156,11 @@ def test_build_anti_testset():
     # fill with some specific value
     for fillvalue in (0, 42.0, -1):
         anti = trainset.build_anti_testset(fill=fillvalue)
-        for (u, i, r) in anti:
+        for u, i, r in anti:
             assert r == fillvalue
     # fill with global_mean
     anti = trainset.build_anti_testset(fill=None)
-    for (u, i, r) in anti:
+    for u, i, r in anti:
         assert r == trainset.global_mean
     expect = trainset.n_users * trainset.n_items
     assert trainset.n_ratings + len(anti) == expect

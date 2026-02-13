@@ -5,7 +5,6 @@ import errno
 import os
 import zipfile
 from collections import namedtuple
-
 from os.path import join
 from urllib.request import urlretrieve
 

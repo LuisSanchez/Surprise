@@ -3,9 +3,7 @@ This module descibes how to build your own prediction algorithm. Please refer
 to User Guide for more insight.
 """
 
-
 import numpy as np
-
 from surprise import AlgoBase, Dataset
 from surprise.model_selection import cross_validate
 

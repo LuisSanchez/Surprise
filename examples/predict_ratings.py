@@ -3,7 +3,6 @@ This module descibes how to train on a full dataset (when no testset is
 built/specified) and how to use the predict() method.
 """
 
-
 from surprise import Dataset, KNNBasic
 
 # Load the movielens-100k dataset

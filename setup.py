@@ -1,7 +1,6 @@
-from setuptools import Extension, setup
-
 import numpy as np
 from Cython.Build import cythonize
+from setuptools import Extension, setup
 
 """
 Prior to relying on PEP517/518 and using pyproject.toml, this setup.py used to

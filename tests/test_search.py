@@ -2,13 +2,11 @@
 Module for testing the model_selection.search module.
 """
 
-
 import os
 
 import numpy as np
 import pytest
 from scipy.stats import randint, uniform
-
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import (
     cross_validate,

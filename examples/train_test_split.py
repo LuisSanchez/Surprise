@@ -2,7 +2,6 @@
 This module describes how to use the train_test_split() function.
 """
 
-
 from surprise import accuracy, Dataset, SVD
 from surprise.model_selection import train_test_split
 

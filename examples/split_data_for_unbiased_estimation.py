@@ -4,12 +4,10 @@ tuning the algorithm parameters, and B is for having an unbiased estimation of
 its performances. The tuning is done by Grid Search.
 """
 
-
 import random
 
 from surprise import accuracy, Dataset, SVD
 from surprise.model_selection import GridSearchCV
-
 
 # Load the full dataset.
 data = Dataset.load_builtin("ml-100k")

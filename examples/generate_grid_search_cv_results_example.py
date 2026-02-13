@@ -3,7 +3,6 @@ This module is used for generating the doc tables about the
 GridSearchCV.cv_results attribute.
 """
 
-
 from surprise import Dataset, SVD
 from surprise.model_selection import GridSearchCV
 from tabulate import tabulate

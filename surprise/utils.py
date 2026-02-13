@@ -1,6 +1,5 @@
 """The utils module contains the get_rng function."""
 
-
 import numbers
 
 import numpy as np

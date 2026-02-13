@@ -2,7 +2,6 @@
 Module for testing the SVD and SVD++ algorithms.
 """
 
-
 from surprise import SVD, SVDpp
 from surprise.model_selection import cross_validate
 

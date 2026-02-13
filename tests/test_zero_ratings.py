@@ -16,9 +16,7 @@ remap them. Maybe it will change in the future, we would have to find a
 workaround.
 """
 
-
 import pandas as pd
-
 from surprise import Dataset, Reader
 
 

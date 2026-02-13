@@ -2,7 +2,6 @@
 Module for testing the CoClustering algorithm.
 """
 
-
 from surprise import CoClustering
 from surprise.model_selection import cross_validate
 

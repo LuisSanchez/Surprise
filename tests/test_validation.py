@@ -2,7 +2,6 @@
 Module for testing the validation module.
 """
 
-
 import os
 
 from surprise import Dataset, model_selection as ms, NormalPredictor, Reader

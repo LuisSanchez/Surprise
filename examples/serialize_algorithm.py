@@ -8,7 +8,6 @@ import os
 
 from surprise import Dataset, dump, SVD
 
-
 data = Dataset.load_builtin("ml-100k")
 trainset = data.build_full_trainset()
 

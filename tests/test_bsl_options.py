@@ -1,8 +1,6 @@
 """Ensure that options for baseline estimates are taken into account."""
 
-
 import pytest
-
 from surprise import BaselineOnly
 from surprise.model_selection import cross_validate
 

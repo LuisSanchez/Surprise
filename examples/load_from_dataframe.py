@@ -2,12 +2,9 @@
 This module descibes how to load a dataset from a pandas dataframe.
 """
 
-
 import pandas as pd
-
 from surprise import Dataset, NormalPredictor, Reader
 from surprise.model_selection import cross_validate
-
 
 # Creation of the dataframe. Column names are irrelevant.
 ratings_dict = {

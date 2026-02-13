@@ -3,7 +3,6 @@ This module describes how to use the GridSearchCV() class for finding the best
 parameter combination of a given algorithm.
 """
 
-
 from surprise import Dataset, SVD
 from surprise.model_selection import GridSearchCV
 

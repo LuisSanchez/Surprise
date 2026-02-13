@@ -13,7 +13,6 @@ from surprise import __version__
 from surprise.builtin_datasets import get_dataset_dir
 from surprise.dataset import Dataset
 from surprise.model_selection import cross_validate, KFold, PredefinedKFold
-
 from surprise.prediction_algorithms import (
     BaselineOnly,
     CoClustering,
@@ -32,7 +31,8 @@ from surprise.reader import Reader  # noqa
 def main():
     class MyParser(argparse.ArgumentParser):
         """A parser which prints the help message when an error occurs. Taken from
-        https://stackoverflow.com/questions/4042452/display-help-message-with-python-argparse-when-script-is-called-without-any-argu."""  # noqa
+        https://stackoverflow.com/questions/4042452/display-help-message-with-python-argparse-when-script-is-called-without-any-argu.
+        """  # noqa
 
         def error(self, message):
             sys.stderr.write("error: %s\n" % message)

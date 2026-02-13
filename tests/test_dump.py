@@ -1,11 +1,9 @@
 """Module for testing the dump module."""
 
-
 import random
 import tempfile
 
 import pytest
-
 from surprise import (
     BaselineOnly,
     CoClustering,

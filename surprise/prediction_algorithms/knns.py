@@ -7,9 +7,7 @@ import heapq
 import numpy as np
 
 from .algo_base import AlgoBase
-
 from .predictions import PredictionImpossible
-
 
 # Important note: as soon as an algorithm uses a similarity measure, it should
 # also allow the bsl_options parameter because of the pearson_baseline
@@ -111,7 +109,7 @@ class KNNBasic(SymmetricAlgo):
 
         # compute weighted average
         sum_sim = sum_ratings = actual_k = 0
-        for (sim, r) in k_neighbors:
+        for sim, r in k_neighbors:
             if sim > 0:
                 sum_sim += sim
                 sum_ratings += sim * r
@@ -195,7 +193,7 @@ class KNNWithMeans(SymmetricAlgo):
 
         # compute weighted average
         sum_sim = sum_ratings = actual_k = 0
-        for (nb, sim, r) in k_neighbors:
+        for nb, sim, r in k_neighbors:
             if sim > 0:
                 sum_sim += sim
                 sum_ratings += sim * (r - self.means[nb])
@@ -270,7 +268,7 @@ class KNNBaseline(SymmetricAlgo):
             sim_options=sim_options,
             bsl_options=bsl_options,
             verbose=verbose,
-            **kwargs
+            **kwargs,
         )
 
         self.k = k
@@ -303,7 +301,7 @@ class KNNBaseline(SymmetricAlgo):
 
         # compute weighted average
         sum_sim = sum_ratings = actual_k = 0
-        for (nb, sim, r) in k_neighbors:
+        for nb, sim, r in k_neighbors:
             if sim > 0:
                 sum_sim += sim
                 nb_bsl = self.trainset.global_mean + self.bx[nb] + self.by[y]
@@ -399,7 +397,7 @@ class KNNWithZScore(SymmetricAlgo):
 
         # compute weighted average
         sum_sim = sum_ratings = actual_k = 0
-        for (nb, sim, r) in k_neighbors:
+        for nb, sim, r in k_neighbors:
             if sim > 0:
                 sum_sim += sim
                 sum_ratings += sim * (r - self.means[nb]) / self.sigmas[nb]

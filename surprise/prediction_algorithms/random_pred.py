@@ -1,6 +1,4 @@
-""" Algorithm predicting a random rating.
-"""
-
+"""Algorithm predicting a random rating."""
 
 import numpy as np
 

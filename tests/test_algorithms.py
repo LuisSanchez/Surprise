@@ -2,11 +2,9 @@
 Module for testing prediction algorithms.
 """
 
-
 import os
 
 import pytest
-
 from surprise import (
     accuracy,
     BaselineOnly,

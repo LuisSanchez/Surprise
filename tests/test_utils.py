@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from surprise.utils import get_rng
 
 

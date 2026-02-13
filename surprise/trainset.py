@@ -1,6 +1,5 @@
 """This module contains the Trainset class."""
 
-
 import numpy as np
 
 

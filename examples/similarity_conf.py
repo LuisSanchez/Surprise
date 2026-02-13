@@ -3,10 +3,8 @@ This module gives an example of how to configure similarity measures
 computation.
 """
 
-
 from surprise import Dataset, KNNBasic
 from surprise.model_selection import cross_validate
-
 
 # Load the movielens-100k dataset.
 data = Dataset.load_builtin("ml-100k")

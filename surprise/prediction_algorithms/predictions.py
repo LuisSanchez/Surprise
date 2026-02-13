@@ -4,7 +4,6 @@ The :mod:`surprise.prediction_algorithms.predictions` module defines the
 exception.
 """
 
-
 from collections import namedtuple
 
 
