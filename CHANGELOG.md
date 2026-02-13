@@ -1,3 +1,14 @@
+VERSION 1.2.0
+=============
+
+Data: 02/2026
+
+Enhancements
+------------
+
+* Support Python 3.13
+* Every use of np.int_t in surprise/prediction_algorithms/co_clustering.pyx was replaced with np.int64_t. That matches the usual width of np.int_ on 64-bit platforms and is valid with NumPy 2.0.
+
 VERSION 1.1.4
 =============
 
