@@ -6,6 +6,8 @@
 
 [![logo](./logo_black.svg)](https://surpriselib.com)
 
+**About this repository** — This is a **community fork** of [Nicolas Hug’s Surprise](https://github.com/NicolasHug/Surprise). I am not the original author or owner; I forked it so the codebase can be updated regularly (e.g. Python 3.13, NumPy 2.x). All credit goes to [Nicolas Hug](https://github.com/NicolasHug) and the [contributors](https://github.com/NicolasHug/Surprise/graphs/contributors) of the original project.
+
 Overview
 --------
 
@@ -58,6 +60,8 @@ following purposes in mind**:
 
 The name *SurPRISE* (roughly :) ) stands for *Simple Python RecommendatIon
 System Engine*.
+
+**Features** — Easy to use (built-in datasets like Movielens and Jester, or your own), rich set of algorithms (SVD, SVD++, NMF, Slope One, k-NN, Co-Clustering, baselines, etc.), multiple similarity measures (cosine, MSD, Pearson), and scikit-learn–style tools for evaluation and parameter tuning (e.g. GridSearchCV).
 
 Please note that surprise does not support implicit ratings or content-based
 information.
@@ -149,6 +153,8 @@ example](https://github.com/NicolasHug/Surprise/tree/master/examples/benchmark.p
 Installation
 ------------
 
+**Requirements:** Python ≥ 3.13, NumPy ≥ 2.4.2, SciPy ≥ 1.17.0, joblib ≥ 1.4.2.
+
 With pip (you'll need a C compiler. Windows users might prefer using conda):
 
     $ pip install scikit-surprise
@@ -157,13 +163,20 @@ With conda:
 
     $ conda install -c conda-forge scikit-surprise
 
-For the latest version, you can also clone the repo and build the source
-(you'll first need [Cython](https://cython.org/) and
-[numpy](https://www.numpy.org/)):
+For the latest version from this fork, clone the repo and build from source
+(you'll need [Cython](https://cython.org/) and [NumPy](https://www.numpy.org/));
+replace `luissanchez` with the fork's GitHub username if different:
 
-    $ git clone https://github.com/NicolasHug/surprise.git
-    $ cd surprise
+    $ git clone https://github.com/luissanchez/Surprise.git
+    $ cd Surprise
     $ pip install .
+
+Links
+-----
+
+- **Documentation:** https://surprise.readthedocs.io/
+- **Homepage:** https://surpriselib.com
+- **Original source:** https://github.com/NicolasHug/Surprise
 
 License and reference
 ---------------------
@@ -172,8 +185,7 @@ This project is licensed under the [BSD
 3-Clause](https://opensource.org/licenses/BSD-3-Clause) license, so it can be
 used for pretty much everything, including commercial applications.
 
-I'd love to know how Surprise is useful to you. Please don't hesitate to open
-an issue and describe how you use it!
+If you find Surprise useful, consider opening an issue to share how you use it!
 
 Please make sure to cite the
 [paper](https://joss.theoj.org/papers/10.21105/joss.02174) if you use
@@ -211,11 +223,14 @@ Thanks a lot :) !
 Development Status
 ------------------
 
-Starting from version 1.1.0 (September 2019), I will only maintain the package,
-provide bugfixes, and perhaps sometimes perf improvements. I have less time to
-dedicate to it now, so I'm unabe to consider new features.
+This fork is maintained to keep Surprise working with recent Python and library
+versions (e.g. Python 3.13, NumPy 2.x). The original author’s last note (from
+version 1.1.0) was that the official package would focus on bugfixes and
+maintenance; this fork continues that in a community-driven way.
 
-For bugs, issues or questions about [Surprise](https://surpriselib.com), please
-avoid sending me emails; I will most likely not be able to answer). Please use
-the GitHub [project page](https://github.com/NicolasHug/Surprise) instead, so
-that others can also benefit from it.
+**Recent updates in this fork:** Python 3.13 support; NumPy 2.x compatibility
+(Cython types updated for NumPy 2.0, e.g. in co-clustering).
+
+For bugs, issues, or questions, please use the [GitHub project
+page](https://github.com/NicolasHug/Surprise) (or this fork’s issues) so others
+can benefit from the discussion.
