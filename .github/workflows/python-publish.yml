@@ -28,9 +28,10 @@ jobs:
 
       - name: Build release distributions
         run: |
-          # NOTE: put your own distribution build steps here.
+          # Build sdist only. PyPI rejects wheels with platform tag 'linux_x86_64';
+          # proper manylinux wheels would require e.g. cibuildwheel. Users install from sdist.
           python -m pip install build
-          python -m build
+          python -m build --sdist
 
       - name: Verify package name (must be scikit-surprise-2 for PyPI)
         run: |
