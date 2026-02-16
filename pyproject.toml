@@ -1,5 +1,5 @@
 [project]
-name = "scikit-surprise"
+name = "scikit-surprise-2"
 authors = [{ name = "Nicolas Hug", email = "contact@nicolas-hug.com" }]
 description = "An easy-to-use library for recommender systems."
 requires-python = ">=3.13"
