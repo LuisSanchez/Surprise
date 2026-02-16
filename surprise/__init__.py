@@ -43,4 +43,4 @@ __all__ = [
     "model_selection",
 ]
 
-__version__ = "1.2.0"
+__version__ = "1.2.3"

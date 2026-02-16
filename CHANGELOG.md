@@ -1,3 +1,13 @@
+VERSION 1.2.3
+=============
+
+Data: 02/2026
+
+Enhancements
+------------
+
+* Support JobLib => 1.5.3
+
 VERSION 1.2.0
 =============
 

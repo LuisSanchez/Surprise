@@ -1,4 +1,4 @@
-[![GitHub version](https://badge.fury.io/gh/nicolashug%2FSurprise.svg)](https://badge.fury.io/gh/nicolashug%2FSurprise)
+[![GitHub version](https://badge.fury.io/gh/LuisSanchez%2Fsurprise.svg)](https://badge.fury.io/gh/nicolashug%2FSurprise)
 [![Documentation Status](https://readthedocs.org/projects/surprise/badge/?version=stable)](https://surprise.readthedocs.io/en/stable/?badge=stable)
 [![python versions](https://img.shields.io/badge/python-3.13+-blue.svg)](https://surpriselib.com)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
@@ -153,7 +153,7 @@ example](https://github.com/NicolasHug/Surprise/tree/master/examples/benchmark.p
 Installation
 ------------
 
-**Requirements:** Python ≥ 3.13, NumPy ≥ 2.4.2, SciPy ≥ 1.17.0, joblib ≥ 1.4.2.
+**Requirements:** Python ≥ 3.13, NumPy ≥ 2.4.2, SciPy ≥ 1.17.0, joblib ≥ 1.5.3.
 
 With pip (you'll need a C compiler. Windows users might prefer using conda):
 
