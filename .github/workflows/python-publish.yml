@@ -32,6 +32,15 @@ jobs:
           python -m pip install build
           python -m build
 
+      - name: Verify package name (must be scikit-surprise-2 for PyPI)
+        run: |
+          # Fail early if built artifacts use the wrong name (would get 403 on upload).
+          ls -la dist/
+          if ! (ls dist/ | grep -q 'scikit_surprise_2-'); then
+            echo "::error::Built artifacts are not named scikit_surprise_2-*. PyPI project is scikit-surprise-2. Check that pyproject.toml has name = \"scikit-surprise-2\" in the commit/tag you are releasing."
+            exit 1
+          fi
+
       - name: Upload distributions
         uses: actions/upload-artifact@v4
         with:

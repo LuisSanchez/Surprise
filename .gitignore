@@ -6,7 +6,7 @@ doc/build
 .ipynb_checkpoints/
 .cache/
 
-scikit_surprise.egg-info/
+scikit_surprise_2.egg-info/
 
 build
 dist/
