@@ -60,11 +60,11 @@ jobs:
     environment:
       name: pypi
       # OPTIONAL: uncomment and update to include your PyPI project URL in the deployment status:
-      # url: https://pypi.org/p/YOURPROJECT
+      url: https://pypi.org/p/scikit-surprise-2
       #
       # ALTERNATIVE: if your GitHub Release name is the PyPI project version string
       # ALTERNATIVE: exactly, uncomment the following line instead:
-      url: https://pypi.org/project/scikit-surprise-2/${{ github.event.release.name }}
+      # url: https://pypi.org/project/scikit-surprise-2/${{ github.event.release.name }}
 
     steps:
       - name: Retrieve release distributions
@@ -77,3 +77,5 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/
+          verbose: true
+          skip-existing: true
