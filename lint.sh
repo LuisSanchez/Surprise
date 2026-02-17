@@ -2,9 +2,9 @@
 
 set -ex
 
-black --version
-usort --version
-flake8 --version
+black --version  # 26.1.0 (on Python 3.13)
+usort --version  # 1.1.3
+flake8 --version  # 7.3.0
 
 usort format surprise
 usort format tests
