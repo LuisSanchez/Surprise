@@ -30,8 +30,8 @@ Conda: `conda install -c conda-forge scikit-surprise`
 
 ## Requirements
 
-- Python >= 3.13
-- NumPy >= 2.4.2, SciPy >= 1.17.0, joblib >= 1.5.3
+- Python >= 3.12
+- NumPy >= 2.0.0, SciPy >= 1.15.0, joblib >= 1.5.0
 
 ## Links
 

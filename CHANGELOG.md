@@ -1,3 +1,13 @@
+VERSION 1.2.4
+=============
+
+Data: 02/2026
+
+Enhancements
+------------
+
+* Fixing support on Python 3.12
+
 VERSION 1.2.3
 =============
 
