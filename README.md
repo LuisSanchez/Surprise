@@ -153,7 +153,7 @@ example](https://github.com/NicolasHug/Surprise/tree/master/examples/benchmark.p
 Installation
 ------------
 
-**Requirements:** Python ≥ 3.13, NumPy ≥ 2.4.2, SciPy ≥ 1.17.0, joblib ≥ 1.5.3.
+**Requirements:** Python ≥ 3.13, NumPy ≥ 2.0.0, SciPy ≥ 1.17.0, joblib ≥ 1.5.3.
 
 With pip (you'll need a C compiler. Windows users might prefer using conda):
 

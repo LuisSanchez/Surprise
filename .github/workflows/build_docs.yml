@@ -36,5 +36,5 @@ jobs:
         make html
     - uses: actions/upload-artifact@v4
       with:
-        name: the-docs
+        name: the-docs-${{ matrix.python-version }}
         path: doc/build/html
