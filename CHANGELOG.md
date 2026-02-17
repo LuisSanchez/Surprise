@@ -1,3 +1,13 @@
+VERSION 1.2.5
+=============
+
+Data: 02/2026
+
+Enhancements
+------------
+
+* Minor fixes included in v1.2.4
+
 VERSION 1.2.4
 =============
 
