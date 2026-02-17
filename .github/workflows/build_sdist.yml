@@ -57,18 +57,18 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Install sdist
+    - name: Install dependencies and sdist
       run: |
         set -x
-
         pip install --upgrade pip
-        pip install dist/scikit_surprise_2-*.tar.gz -v
-
+        # Install runtime deps first so sdist is built against same NumPy we run with.
+        pip install "numpy>=1.26.4" "scipy>=1.15.0" "joblib>=1.5.0"
+        pip install Cython setuptools wheel
+        pip install dist/scikit_surprise_2-*.tar.gz -v --no-build-isolation
     - name: Pip freeze
       run: |
         pip freeze
-
     - name: Run unit tests
       run: |
-        pip install "numpy>=1.26.4" "scipy>=1.15.0" "joblib>=1.5.0" pandas tabulate pytest
+        pip install pandas tabulate pytest
         pytest -v
