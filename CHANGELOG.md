@@ -1,3 +1,14 @@
+VERSION 1.2.6
+=============
+
+Data: 03/2026
+
+Enhancements
+------------
+
+* Numpy support on Python 3.12
+
+
 VERSION 1.2.5
 =============
 
