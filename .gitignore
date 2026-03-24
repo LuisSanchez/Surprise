@@ -1,7 +1,8 @@
 *.pyc
 *~
 *.swp
-
+.venv/
+.venv312/
 doc/build
 .ipynb_checkpoints/
 .cache/

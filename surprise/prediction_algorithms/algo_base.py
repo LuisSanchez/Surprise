@@ -245,6 +245,7 @@ class AlgoBase:
 
         try:
             if getattr(self, "verbose", False):
+                
                 print(f"Computing the {name} similarity matrix...")
             sim = construction_func[name](*args)
             if getattr(self, "verbose", False):

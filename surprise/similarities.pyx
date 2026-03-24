@@ -54,7 +54,7 @@ def cosine(int n_x, yr, int min_support):
     # sum (r_xy * r_x'y) for common ys
     cdef double [:, ::1] prods = np.zeros((n_x, n_x), np.double)
     # number of common ys
-    cdef long [:, ::1] freq = np.zeros((n_x, n_x), np.int_)
+    cdef long [:, ::1] freq = np.zeros((n_x, n_x), np.int_) # ValueError: Buffer dtype mismatch, expected 'long' but got 'long long'
     # sum (r_xy ^ 2) for common ys
     cdef double [:, ::1] sqi = np.zeros((n_x, n_x), np.double)
     # sum (r_x'y ^ 2) for common ys

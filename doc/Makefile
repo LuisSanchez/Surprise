@@ -193,3 +193,16 @@ pseudoxml:
 
 spelling:
 	$(SPHINXBUILD) -b spelling -d build/doctrees   source build/spelling
+
+dev:
+	uv pip install .
+
+debug:
+	rm -rf .venv
+	uv venv --python 3.12 --clear
+	make dev
+
+local:
+	rm -rf .venv
+	uv venv --python 3.14 --clear
+	make dev
